@@ -1,0 +1,27 @@
+# Ignore virtual environment directory
+venv/
+.venv/
+.DS_Store
+__pycache__/
+.idea/
+.vscode/
+*.log
+.env
+*.sqlite3
+*.db
+*.bak
+*.tmp
+*.old
+*.orig
+*.rej
+*.class
+*.jar
+
+# Python virtual environment
+venv/
+*.pyc
+
+# ChromaDB Database Files
+.chroma/
+chroma_db/
+*.bin 

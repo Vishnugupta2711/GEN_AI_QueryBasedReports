@@ -1,0 +1,5 @@
+Year,Key Achievement,Adoption/Usage,Technical Challenge,Business/Cost Impact
+2016,Introduced HTTPS by default and site security warnings,Encouraged global web encryption adoption,Pushback from some small website owners,"Improved brand trust, minor compliance costs"
+2017,Rolled out multi-process architecture and performance boosts,Reduced crash rate by 15%,Increased RAM usage on older machines,Engineering cost for refactor absorbed by core team
+2018,Launched built-in ad filtering for abusive ads,Improved user experience and site quality,False positives in ad blocking initially,Positive impact on Google’s brand credibility
+2019,Integrated password manager and dark mode,High feature adoption among mobile users,Login sync issues across devices,Moderate support costs for feature fixes

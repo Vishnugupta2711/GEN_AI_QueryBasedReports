@@ -1,0 +1,85 @@
+#Pulls imgage from docker hub and runs the containers for backend and frontend. Make sure to update the .env file with correct database credentials and google api key before running this docker-compose file.
+version: "3.9"
+
+services:
+
+  backend:
+    image: abhay2kumar/25ts09srm-nl2sql-backend
+    container_name: fastapi_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: always
+
+  frontend:
+    image: abhay2kumar/25ts09srm-nl2sql-frontend
+    container_name: streamlit_frontend
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
+    restart: always
+
+
+
+# version: "3.9"
+
+# services:
+#   backend:
+#     image: abhay2kumar/25ts09srm-nl2sql-backend:latest
+#     container_name: fastapi_backend
+#     ports:
+#       - "8000:8000"
+#     env_file:
+#       - .env
+#     restart: unless-stopped
+
+#   frontend:
+#     image: abhay2kumar/25ts09srm-nl2sql-frontend:latest
+#     container_name: streamlit_frontend
+#     ports:
+#       - "8501:8501"
+#     env_file:
+#       - .env
+#     environment:
+#       - BACKEND_URL=http://backend:8000
+#     depends_on:
+#       - backend
+#     restart: unless-stopped
+
+
+
+# This is the original docker-compose file used for development. It builds the images locally from the Dockerfiles in the backend and frontend directories. You can use this if you want to make changes to the code and test them locally before pushing to docker hub.
+# version: "3.9"
+
+# services:
+
+#   backend:
+#     build: ./backend
+#     container_name: fastapi_backend
+#     ports:
+#       - "8000:8000"
+#     env_file:
+#       - .env
+#     restart: always
+
+#   frontend:
+#     build: ./frontend
+#     container_name: streamlit_frontend
+#     ports:
+#       - "8501:8501"
+#     env_file:
+#       - .env
+#     environment:
+#       - BACKEND_URL=http://backend:8000
+#     depends_on:
+#       - backend
+#     restart: always
+
+
+

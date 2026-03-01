@@ -1,0 +1,1140 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap');
+
+/* ── Sidebar base ── */
+[data-testid="stSidebar"] {
+    background: #0d0f14 !important;
+    border-right: 1px solid #1e2330 !important;
+}
+
+[data-testid="stSidebar"]>div:first-child {
+    padding: 1.5rem 1.2rem 2rem;
+}
+
+/* ── Sidebar header ── */
+[data-testid="stSidebar"] h2 {
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 1.05rem !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: #e8eaf0 !important;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #1e2330;
+    margin-bottom: 1.4rem !important;
+}
+
+/* ── Section sub-labels ── */
+[data-testid="stSidebar"] h3 {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.72rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    color: #4a5568 !important;
+    margin-top: 1.4rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* ── Selectbox ── */
+[data-testid="stSidebar"] .stSelectbox label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    color: #4a90a4 !important;
+    margin-bottom: 4px !important;
+}
+
+[data-testid="stSidebar"] .stSelectbox>div>div {
+    background-color: #131720 !important;
+    border: 1px solid #252d3d !important;
+    border-radius: 6px !important;
+    color: #c8cdd8 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.82rem !important;
+    transition: border-color 0.2s ease;
+}
+
+[data-testid="stSidebar"] .stSelectbox>div>div:hover {
+    border-color: #4a90a4 !important;
+}
+
+/* ── Refresh button ── */
+[data-testid="stSidebar"] .stButton>button {
+    width: 100% !important;
+    background: transparent !important;
+    border: 1px solid #252d3d !important;
+    border-radius: 6px !important;
+    color: #4a90a4 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.08em !important;
+    padding: 0.5rem 0.8rem !important;
+    margin-top: 0.3rem !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+[data-testid="stSidebar"] .stButton>button:hover {
+    background: #131720 !important;
+    border-color: #4a90a4 !important;
+    color: #7ec8e3 !important;
+    box-shadow: 0 0 12px rgba(74, 144, 164, 0.15) !important;
+}
+
+[data-testid="stSidebar"] .stButton>button:active {
+    transform: scale(0.98) !important;
+}
+
+/* ── Alerts / info messages ── */
+[data-testid="stSidebar"] .stAlert {
+    border-radius: 6px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.76rem !important;
+}
+
+/* ── Dataframe preview ── */
+[data-testid="stSidebar"] .stDataFrame {
+    border: 1px solid #1e2330 !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+}
+
+[data-testid="stSidebar"] .stDataFrame table {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.72rem !important;
+}
+
+/* ── Divider lines ── */
+[data-testid="stSidebar"] hr {
+    border-color: #1e2330 !important;
+    margin: 1.2rem 0 !important;
+}
+
+/* ── Step badge helper ── */
+.step-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+.step-badge span.num {
+    background: #1e2330;
+    color: #4a90a4;
+    border-radius: 4px;
+    padding: 1px 7px;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+
+/* ── Page subtitle ── */
+.page-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.76rem;
+    color: #4a5568;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.8rem;
+}
+
+/* ── Selectbox ── */
+.stSelectbox label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    color: #3d7fa8 !important;
+}
+
+.stSelectbox>div>div {
+    background: #0d1018 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    color: #c8d4e8 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.84rem !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.stSelectbox>div>div:hover {
+    border-color: #3d7fa8 !important;
+}
+
+/* ── File uploader ── */
+[data-testid="stFileUploader"] {
+    background: #0d1018 !important;
+    border: 1.5px dashed #1e2535 !important;
+    border-radius: 10px !important;
+    padding: 1.4rem 1.2rem !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #3d7fa8 !important;
+    box-shadow: 0 0 0 3px rgba(61, 127, 168, 0.08) !important;
+}
+
+[data-testid="stFileUploader"] label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    color: #3d7fa8 !important;
+}
+
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploader"] span {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.75rem !important;
+    color: #4a5568 !important;
+}
+
+[data-testid="stFileUploader"] button {
+    background: #111420 !important;
+    border: 1px solid #252d3d !important;
+    border-radius: 6px !important;
+    color: #7ec8e3 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.1em !important;
+    padding: 0.35rem 1rem !important;
+    transition: all 0.2s ease !important;
+}
+
+[data-testid="stFileUploader"] button:hover {
+    background: #1a3a52 !important;
+    border-color: #3d7fa8 !important;
+}
+
+/* ── File selected info card ── */
+.file-info-card {
+    background: #111420;
+    border: 1px solid #1e2535;
+    border-left: 3px solid #3d7fa8;
+    border-radius: 0 8px 8px 0;
+    padding: 0.7rem 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+}
+
+.file-info-card .file-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    color: #a8d8ea;
+}
+
+.file-info-card .file-size {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #4a5568;
+}
+
+/* ── Primary / Analyze button ── */
+.stButton>button[kind="primary"],
+.stButton>button {
+    background: linear-gradient(135deg, #1a3a52 0%, #0f2336 100%) !important;
+    border: 1px solid #3d7fa8 !important;
+    border-radius: 7px !important;
+    color: #7ec8e3 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    padding: 0.55rem 1.8rem !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(135deg, #1f4a68 0%, #132d45 100%) !important;
+    box-shadow: 0 0 18px rgba(61, 127, 168, 0.3) !important;
+    color: #aee4f5 !important;
+    transform: translateY(-1px) !important;
+}
+
+.stButton>button:active {
+    transform: scale(0.97) translateY(0) !important;
+}
+
+/* ── Spinner ── */
+.stSpinner>div {
+    border-top-color: #3d7fa8 !important;
+}
+
+/* ── Metric cards ── */
+[data-testid="stMetric"] {
+    background: #111420 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 9px !important;
+    padding: 1rem 1.2rem !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.16em !important;
+    text-transform: uppercase !important;
+    color: #4a5568 !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem !important;
+    color: #7ec8e3 !important;
+}
+
+/* ── Expander ── */
+.stExpander {
+    background: #111420 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+.stExpander summary {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.74rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    color: #3d7fa8 !important;
+    padding: 0.75rem 1rem !important;
+}
+
+.stExpander summary:hover {
+    background: #131720 !important;
+}
+
+/* ── JSON block ── */
+.stJson,
+[data-testid="stJson"] {
+    background: #0d1018 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+}
+
+/* ── Match result rows ── */
+.match-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid #161b27;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.76rem;
+    color: #8a96aa;
+}
+
+.match-row:last-child {
+    border-bottom: none;
+}
+
+.match-row .src {
+    color: #a8d8ea;
+}
+
+.match-row .arrow {
+    color: #3d7fa8;
+}
+
+.match-row .tgt {
+    color: #7ec8a8;
+}
+
+.match-row .pct {
+    margin-left: auto;
+    background: #111420;
+    border: 1px solid #1e2535;
+    border-radius: 4px;
+    padding: 1px 8px;
+    font-size: 0.65rem;
+    color: #4a7a6a;
+}
+
+.match-block {
+    background: #0d1018;
+    border: 1px solid #1e2535;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin-top: 0.5rem;
+}
+
+/* ── Schema section label ── */
+.schema-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #3d7fa8;
+    margin: 1.4rem 0 0.5rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #1e2535;
+}
+
+/* ── Traceback code ── */
+.stCode pre {
+    background: #0d1018 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.76rem !important;
+    color: #f07070 !important;
+}
+
+/* ── How it works markdown ── */
+.stExpander .stMarkdown p,
+.stExpander .stMarkdown li {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+    color: #8a96aa !important;
+    line-height: 1.75 !important;
+}
+
+.stExpander .stMarkdown strong {
+    color: #a8d8ea !important;
+    font-weight: 500 !important;
+}
+
+.stExpander .stMarkdown h3 {
+    color: #e2e6f0 !important;
+    font-size: 0.78rem !important;
+    margin-top: 1rem !important;
+}
+
+/* ── Alerts ── */
+.stAlert {
+    border-radius: 7px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+}
+
+/* ── Divider ── */
+hr {
+    border-color: #1a1f2e !important;
+    margin: 1.4rem 0 !important;
+}
+
+/* ── File uploader drop zone ── */
+[data-testid="stFileUploader"] {
+    background: #0d1018 !important;
+    border: 1.5px dashed #1e2535 !important;
+    border-radius: 10px !important;
+    padding: 1.4rem 1.2rem !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #3d7fa8 !important;
+    box-shadow: 0 0 0 3px rgba(61, 127, 168, 0.08) !important;
+}
+
+[data-testid="stFileUploader"] label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    color: #3d7fa8 !important;
+}
+
+[data-testid="stFileUploader"] section {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Drop zone inner text */
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploader"] span {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.75rem !important;
+    color: #4a5568 !important;
+}
+
+/* Browse button inside uploader */
+[data-testid="stFileUploader"] button {
+    background: #111420 !important;
+    border: 1px solid #252d3d !important;
+    border-radius: 6px !important;
+    color: #7ec8e3 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.1em !important;
+    padding: 0.35rem 1rem !important;
+    transition: all 0.2s ease !important;
+}
+
+[data-testid="stFileUploader"] button:hover {
+    background: #1a3a52 !important;
+    border-color: #3d7fa8 !important;
+}
+
+/* ── Uploaded file chip ── */
+[data-testid="stFileUploaderFile"] {
+    background: #111420 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 6px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+    color: #a8d8ea !important;
+    padding: 0.45rem 0.8rem !important;
+}
+
+/* ── Table name input label ── */
+.stTextInput label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    color: #3d7fa8 !important;
+    margin-bottom: 4px !important;
+}
+
+/* ── Table name input field ── */
+.stTextInput input {
+    background: #0d1018 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    color: #c8d4e8 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.88rem !important;
+    padding: 0.65rem 1rem !important;
+    caret-color: #3d7fa8 !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.stTextInput input::placeholder {
+    color: #2e3a4e !important;
+    font-style: italic !important;
+}
+
+.stTextInput input:focus {
+    border-color: #3d7fa8 !important;
+    box-shadow: 0 0 0 3px rgba(61, 127, 168, 0.12) !important;
+    outline: none !important;
+}
+
+/* ── Ingest Table button ── */
+.stButton>button {
+    background: linear-gradient(135deg, #1a3a52 0%, #0f2336 100%) !important;
+    border: 1px solid #3d7fa8 !important;
+    border-radius: 7px !important;
+    color: #7ec8e3 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    padding: 0.55rem 1.8rem !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(135deg, #1f4a68 0%, #132d45 100%) !important;
+    box-shadow: 0 0 18px rgba(61, 127, 168, 0.3) !important;
+    color: #aee4f5 !important;
+    transform: translateY(-1px) !important;
+}
+
+.stButton>button:active {
+    transform: scale(0.97) translateY(0) !important;
+}
+
+/* ── Spinner ── */
+.stSpinner>div {
+    border-top-color: #3d7fa8 !important;
+}
+
+/* ── Success card ── */
+.ingest-success-card {
+    background: #0d1a14;
+    border: 1px solid #1e3530;
+    border-left: 3px solid #4a7a6a;
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.3rem;
+    margin-top: 1.2rem;
+}
+
+.ingest-success-card .success-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #4a7a6a;
+    margin-bottom: 6px;
+}
+
+.ingest-success-card .table-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #7ec8a8;
+    letter-spacing: 0.04em;
+}
+
+/* ── Result JSON expander ── */
+.result-meta-header {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #4a5568;
+    margin: 1.2rem 0 0.4rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #1e2535;
+}
+
+.stJson,
+[data-testid="stJson"] {
+    background: #0d1018 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+    padding: 0.8rem 1rem !important;
+}
+
+/* ── st.write dict fallback ── */
+.stMarkdown pre,
+.element-container pre {
+    background: #0d1018 !important;
+    border: 1px solid #1e2535 !important;
+    border-radius: 8px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+    color: #a8d8ea !important;
+    padding: 0.9rem 1.1rem !important;
+}
+
+/* ── Alerts ── */
+.stAlert {
+    border-radius: 7px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+}
+
+/* ── Hint text ── */
+.upload-hint {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: #2e3a4e;
+    margin-top: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+/* ── Divider ── */
+hr {
+    border-color: #1a1f2e !important;
+    margin: 1.4rem 0 !important;
+}
+
+/* ── Text input label ── */
+        .stTextInput label {
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.68rem !important;
+            letter-spacing: 0.14em !important;
+            text-transform: uppercase !important;
+            color: #3d7fa8 !important;
+            margin-bottom: 4px !important;
+        }
+
+        /* ── Text input field ── */
+        .stTextInput input {
+            background: #0d1018 !important;
+            border: 1px solid #1e2535 !important;
+            border-radius: 8px !important;
+            color: #c8d4e8 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.88rem !important;
+            padding: 0.65rem 1rem !important;
+            caret-color: #3d7fa8 !important;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        }
+        .stTextInput input::placeholder {
+            color: #2e3a4e !important;
+            font-style: italic;
+        }
+        .stTextInput input:focus {
+            border-color: #3d7fa8 !important;
+            box-shadow: 0 0 0 3px rgba(61, 127, 168, 0.12) !important;
+            outline: none !important;
+        }
+
+        /* ── Generate SQL button ── */
+        .stButton > button {
+            background: linear-gradient(135deg, #1a3a52 0%, #0f2336 100%) !important;
+            border: 1px solid #3d7fa8 !important;
+            border-radius: 7px !important;
+            color: #7ec8e3 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.12em !important;
+            text-transform: uppercase !important;
+            padding: 0.55rem 1.8rem !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
+        }
+        .stButton > button:hover {
+            background: linear-gradient(135deg, #1f4a68 0%, #132d45 100%) !important;
+            box-shadow: 0 0 18px rgba(61, 127, 168, 0.3) !important;
+            color: #aee4f5 !important;
+            transform: translateY(-1px) !important;
+        }
+        .stButton > button:active {
+            transform: scale(0.97) translateY(0) !important;
+        }
+
+        /* ── Spinner ── */
+        .stSpinner > div {
+            border-top-color: #3d7fa8 !important;
+        }
+
+        /* ── Code block (generated SQL) ── */
+        .stCode {
+            border: 1px solid #1e2535 !important;
+            border-radius: 8px !important;
+            overflow: hidden !important;
+        }
+        .stCode pre {
+            background: #0d1018 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.85rem !important;
+            line-height: 1.75 !important;
+            color: #a8d8ea !important;
+            padding: 1.1rem 1.3rem !important;
+        }
+        /* keyword highlights via natural token coloring */
+        .stCode code .kn, .stCode code .k  { color: #7ec8e3 !important; }
+        .stCode code .s, .stCode code .s2  { color: #98d4a3 !important; }
+        .stCode code .mi                    { color: #f0a070 !important; }
+
+        /* ── Result label above code block ── */
+        .sql-result-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #3d7fa8;
+            margin: 1.4rem 0 0.45rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #1e2535;
+        }
+        .sql-result-header .badge {
+            background: #111420;
+            border: 1px solid #1e2535;
+            border-radius: 4px;
+            padding: 2px 10px;
+            color: #4a7a6a;
+            font-size: 0.62rem;
+        }
+
+        /* ── Input wrapper hint ── */
+        .input-hint {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            color: #2e3a4e;
+            margin-top: 0.35rem;
+            margin-bottom: 0.9rem;
+        }
+
+        /* ── Alert ── */
+        .stAlert {
+            border-radius: 7px !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+        }
+
+        /* ── Divider ── */
+        hr {
+            border-color: #1a1f2e !important;
+            margin: 1.4rem 0 !important;
+        }
+ /* ── Generate button ── */
+        div[data-testid="stButton"] > button {
+            background: linear-gradient(135deg, #1a3a52 0%, #0f2336 100%) !important;
+            border: 1px solid #3d7fa8 !important;
+            border-radius: 7px !important;
+            color: #7ec8e3 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.12em !important;
+            text-transform: uppercase !important;
+            padding: 0.55rem 1.8rem !important;
+            transition: all 0.2s ease !important;
+        }
+        div[data-testid="stButton"] > button:hover {
+            background: linear-gradient(135deg, #1f4a68 0%, #132d45 100%) !important;
+            box-shadow: 0 0 18px rgba(61, 127, 168, 0.3) !important;
+            color: #aee4f5 !important;
+            transform: translateY(-1px) !important;
+        }
+        div[data-testid="stButton"] > button:active {
+            transform: scale(0.97) translateY(0) !important;
+        }
+
+        /* ── Spinner ── */
+        .stSpinner > div {
+            border-top-color: #3d7fa8 !important;
+        }
+
+        /* ── Alerts ── */
+        .stAlert {
+            border-radius: 7px !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+        }
+
+        /* ── Summary section heading ── */
+        .summary-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #e2e6f0;
+            margin: 1.6rem 0 0.9rem;
+            padding-bottom: 0.65rem;
+            border-bottom: 1px solid #1e2535;
+        }
+        .summary-header .icon-pill {
+            background: #111420;
+            border: 1px solid #1e2535;
+            border-radius: 5px;
+            padding: 3px 10px;
+            font-size: 0.9rem;
+        }
+
+        /* ── Summary card ── */
+        .summary-card {
+            background: #111420;
+            border: 1px solid #1e2535;
+            border-left: 3px solid #3d7fa8;
+            border-radius: 0 8px 8px 0;
+            padding: 1.1rem 1.4rem;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.84rem;
+            line-height: 1.8;
+            color: #b8c4d4;
+            margin-bottom: 1.4rem;
+            position: relative;
+        }
+        .summary-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 14px;
+            font-size: 2.8rem;
+            color: #1e3a52;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        /* ── Viz section heading ── */
+        .chart-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #e2e6f0;
+            margin: 1.8rem 0 0.9rem;
+            padding-bottom: 0.65rem;
+            border-bottom: 1px solid #1e2535;
+        }
+        .chart-header .icon-pill {
+            background: #111420;
+            border: 1px solid #1e2535;
+            border-radius: 5px;
+            padding: 3px 10px;
+            font-size: 0.9rem;
+        }
+
+        /* ── Plotly chart wrapper ── */
+        .stPlotlyChart {
+            background: #111420 !important;
+            border: 1px solid #1e2535 !important;
+            border-radius: 10px !important;
+            padding: 0.6rem !important;
+            overflow: hidden !important;
+        }
+
+        /* ── Divider ── */
+        hr {
+            border-color: #1a1f2e !important;
+            margin: 1.4rem 0 !important;
+        }
+
+        /* ── Success toast override ── */
+        .stToast {
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+        }
+/* ── Previous result label ── */
+        .prev-result-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #4a5568;
+            margin-bottom: 0.55rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #1e2535;
+        }
+        .prev-result-header .dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #3d7fa8;
+            flex-shrink: 0;
+        }
+
+        /* ── Context thread line ── */
+        .context-thread {
+            display: flex;
+            gap: 14px;
+            margin: 1.4rem 0;
+        }
+        .context-thread .thread-line {
+            width: 2px;
+            background: linear-gradient(180deg, #3d7fa8 0%, #1e2535 100%);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+        .context-thread .thread-body {
+            flex: 1;
+        }
+
+        /* ── Previous SQL pill ── */
+        .prev-sql-pill {
+            background: #0d1018;
+            border: 1px solid #1e2535;
+            border-radius: 6px;
+            padding: 0.55rem 0.9rem;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.73rem;
+            color: #4a7090;
+            margin-bottom: 1.1rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .prev-sql-pill .pill-label {
+            font-size: 0.6rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #2e3a4e;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* ── Dataframe ── */
+        .stDataFrame {
+            border: 1px solid #1e2535 !important;
+            border-radius: 8px !important;
+            overflow: hidden !important;
+            margin-bottom: 1rem !important;
+        }
+        .stDataFrame thead tr th {
+            background: #111420 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.7rem !important;
+            letter-spacing: 0.1em !important;
+            text-transform: uppercase !important;
+            color: #3d7fa8 !important;
+            border-bottom: 1px solid #1e2535 !important;
+        }
+        .stDataFrame tbody tr td {
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.8rem !important;
+            color: #c0c8d8 !important;
+            border-bottom: 1px solid #161b27 !important;
+        }
+        .stDataFrame tbody tr:hover td {
+            background: #131720 !important;
+        }
+
+        /* ── Text input label ── */
+        .stTextInput label {
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.68rem !important;
+            letter-spacing: 0.14em !important;
+            text-transform: uppercase !important;
+            color: #3d7fa8 !important;
+            margin-bottom: 4px !important;
+        }
+
+        /* ── Text input field ── */
+        .stTextInput input {
+            background: #0d1018 !important;
+            border: 1px solid #1e2535 !important;
+            border-radius: 8px !important;
+            color: #c8d4e8 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.88rem !important;
+            padding: 0.65rem 1rem !important;
+            caret-color: #3d7fa8 !important;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        }
+        .stTextInput input::placeholder {
+            color: #2e3a4e !important;
+            font-style: italic;
+        }
+        .stTextInput input:focus {
+            border-color: #3d7fa8 !important;
+            box-shadow: 0 0 0 3px rgba(61, 127, 168, 0.12) !important;
+            outline: none !important;
+        }
+
+        /* ── Generate button ── */
+        .stButton > button {
+            background: linear-gradient(135deg, #1a3a52 0%, #0f2336 100%) !important;
+            border: 1px solid #3d7fa8 !important;
+            border-radius: 7px !important;
+            color: #7ec8e3 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.12em !important;
+            text-transform: uppercase !important;
+            padding: 0.55rem 1.8rem !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
+        }
+        .stButton > button:hover {
+            background: linear-gradient(135deg, #1f4a68 0%, #132d45 100%) !important;
+            box-shadow: 0 0 18px rgba(61, 127, 168, 0.3) !important;
+            color: #aee4f5 !important;
+            transform: translateY(-1px) !important;
+        }
+        .stButton > button:active {
+            transform: scale(0.97) translateY(0) !important;
+        }
+
+        /* ── Spinner ── */
+        .stSpinner > div {
+            border-top-color: #3d7fa8 !important;
+        }
+
+        /* ── Code block ── */
+        .stCode {
+            border: 1px solid #1e2535 !important;
+            border-radius: 8px !important;
+            overflow: hidden !important;
+        }
+        .stCode pre {
+            background: #0d1018 !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.85rem !important;
+            line-height: 1.75 !important;
+            color: #a8d8ea !important;
+            padding: 1.1rem 1.3rem !important;
+        }
+
+        /* ── Generated SQL header ── */
+        .sql-result-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #3d7fa8;
+            margin: 1.4rem 0 0.45rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #1e2535;
+        }
+        .sql-result-header .badge {
+            background: #111420;
+            border: 1px solid #1e2535;
+            border-radius: 4px;
+            padding: 2px 10px;
+            color: #4a7a6a;
+            font-size: 0.62rem;
+        }
+
+        /* ── New results label ── */
+        .new-result-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #4a7a6a;
+            margin: 1.4rem 0 0.55rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #1e2535;
+        }
+        .new-result-header .dot-green {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #4a7a6a;
+            animation: pulse 2s infinite;
+            flex-shrink: 0;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.3; }
+        }
+
+        /* ── Row count meta ── */
+        .result-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #4a5568;
+            margin-bottom: 0.7rem;
+        }
+        .result-meta .tag {
+            background: #111420;
+            border: 1px solid #1e2535;
+            border-radius: 4px;
+            padding: 2px 10px;
+            color: #3d7fa8;
+        }
+
+        /* ── Alerts ── */
+        .stAlert {
+            border-radius: 7px !important;
+            font-family: 'DM Mono', monospace !important;
+            font-size: 0.78rem !important;
+        }
+
+        /* ── Divider ── */
+        hr {
+            border-color: #1a1f2e !important;
+            margin: 1.4rem 0 !important;
+        }
