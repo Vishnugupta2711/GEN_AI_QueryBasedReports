@@ -61,3 +61,4 @@ def refresh_schema_cache(db_name: str):
         print(f"[Chroma Refresh] ✅ Synced embeddings incrementally for '{db_name}'")
     except Exception as e:
         print(f"[Chroma Refresh] ⚠️ Failed to sync embeddings for '{db_name}': {e}")
+# update: 941a359b
