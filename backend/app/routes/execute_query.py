@@ -71,3 +71,5 @@ def execute_query(request: QueryRequest):
     except Exception as e:
         traceback.print_exc()
         return {"status": "error", "detail": str(e)}
+
+# update: 0c898642
