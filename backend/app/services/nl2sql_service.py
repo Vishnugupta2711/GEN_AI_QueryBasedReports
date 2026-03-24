@@ -203,9 +203,3 @@ Instructions:
     except Exception as e:
         traceback.print_exc()
         return {"status": "error", "error": str(e), "question": question}
-
-# update: 90dd5b94
-
-# update: 7e788355
-
-# update: 04a62e86
