@@ -73,3 +73,5 @@ def sync_chroma_schema_embeddings(db_name: str):
 
     # ✅ Return the store so it can be used immediately for similarity search
     return store
+
+# update: 442d53b6
