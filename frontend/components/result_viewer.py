@@ -61,3 +61,4 @@ def show_result_summary(sql_query, db_selected):
                 st.plotly_chart(fig, use_container_width=True)
         except Exception as e:
             st.warning(f"Could not display chart: {str(e)}")
+# update: c0c2bd6e
