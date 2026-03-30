@@ -10,3 +10,4 @@ def is_read_only_query(query: str) -> bool:
     if not isinstance(query, str):
         return False
     return bool(READ_ONLY_QUERY_PATTERN.match(query))
+# update: b5707ab0
