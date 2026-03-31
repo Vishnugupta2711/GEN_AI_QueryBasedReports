@@ -38,3 +38,4 @@ def summarize_query(request: SummarizeRequest):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Summarization failed: {str(e)}")
+# update: fbb54f2b
