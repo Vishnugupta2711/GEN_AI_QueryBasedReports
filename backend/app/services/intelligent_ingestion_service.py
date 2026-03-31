@@ -2324,19 +2324,3 @@ async def intelligent_ingest_file(file: UploadFile, db_name: str) -> Dict:
 #     else:
 #         return {"status": "error", "error": f"Unsupported file type: {file_ext}"}
 
-
-# update: f4bc99f3
-
-# update: 5bf83704
-
-# update: bfa212ff
-
-# update: 0ba5991e
-
-# update: c2790c72
-
-# update: 738a205f
-
-# update: 06aa121f
-
-# update: 620f96a4
