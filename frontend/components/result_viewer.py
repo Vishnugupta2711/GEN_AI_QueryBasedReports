@@ -62,3 +62,5 @@ def show_result_summary(sql_query, db_selected):
         except Exception as e:
             st.warning(f"Could not display chart: {str(e)}")
 # update: c0c2bd6e
+
+# update: f3b5819f
