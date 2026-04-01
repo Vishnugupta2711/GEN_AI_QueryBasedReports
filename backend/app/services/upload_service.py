@@ -83,3 +83,5 @@ async def ingest_file_to_db(file: UploadFile, db_name: str, table_name: str = No
             os.remove(tmp_path)
         except Exception:
             pass
+
+# update: 8c962fdd
