@@ -62,5 +62,3 @@ def ingest_data_file(file_path, filename, db_name):
         data = {"db_name": db_name}
         r = requests.post(f"{BASE_URL}/ingest/", files=files, data=data)
     return r.json()
-
-# update: a071da28

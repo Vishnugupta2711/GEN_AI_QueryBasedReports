@@ -61,13 +61,3 @@ def sidebar_ui():
 
     # --- Step 4: Return both DB and Table ---
     return {"db_name": db_selected, "table_name": table_selected}
-
-# update: e633294c
-
-# update: cc60da4f
-
-# update: 186cb767
-
-# update: 03d43ed0
-
-# update: f9737066

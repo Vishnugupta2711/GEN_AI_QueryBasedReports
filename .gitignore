@@ -25,6 +25,3 @@ venv/
 .chroma/
 chroma_db/
 *.bin 
-# update: b05ab110
-
-# update: e8b79081

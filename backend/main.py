@@ -29,11 +29,3 @@ app.include_router(summarize.router, prefix="/api/summarize", tags=["summarizati
 @app.get("/")
 def root():
     return {"message": "Server is running fine 🚀"}
-
-# update: d2e9f23f
-
-# update: faa0f6e3
-
-# update: 35431046
-
-# update: 09519cc7

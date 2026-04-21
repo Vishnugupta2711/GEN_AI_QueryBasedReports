@@ -27,5 +27,3 @@ async def intelligent_ingest(
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
-
-# update: 404072a1

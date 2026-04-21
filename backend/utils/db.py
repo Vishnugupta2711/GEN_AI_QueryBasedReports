@@ -64,25 +64,3 @@ def get_engine_for_db(db_name: str):
         url = f"mysql+pymysql://{DB_USER}:{DB_PASS_QUOTED}@{DB_HOST}:{DB_PORT}/{db_name}"
         _engine_cache[db_name] = create_engine(url, pool_pre_ping=True, pool_recycle=3600)
     return _engine_cache[db_name]
-
-# update: 2abb7198
-
-# update: 350f28b5
-
-# update: 9d89a434
-
-# update: 6b0dc29d
-
-# update: 9428916e
-
-# update: bde5d8fe
-
-# update: 5d2b698b
-
-# update: 7a323e1d
-
-# update: 09ec263d
-
-# update: 648c8bc4
-
-# update: adb6640a

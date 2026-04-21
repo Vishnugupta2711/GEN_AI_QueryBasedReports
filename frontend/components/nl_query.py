@@ -29,5 +29,3 @@ def nl_query_ui(db_selected):
         else:
             error_msg = sql_result.get("error", "Failed to generate SQL query.")
             st.error(error_msg)
-
-# update: 90f0794b

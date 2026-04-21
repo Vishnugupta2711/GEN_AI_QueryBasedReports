@@ -27,7 +27,3 @@ def nl2sql_route(request: NLQueryRequest):
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
-
-# update: b1cdd811
-
-# update: 55a5e658
